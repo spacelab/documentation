@@ -38,70 +38,71 @@
 * Compontent is nestable
 
 ### Styles
+```css
+.o-media {
+	display: block;
+}
 
-	.o-media {
-		display: block;
-	}
+.o-media__body {
+	display: block;
+	overflow: hidden;
+}
 
-	.o-media__body {
-		display: block;
-		overflow: hidden;
-	}
+.u-image--left > .o-media__image {
+	float: left;
+}
 
-	.u-image--left > .o-media__image {
-		float: left;
-	}
+.u-image--right > .o-media__image {
+	float: right;
+}
 
-	.u-image--right > .o-media__image {
-		float: right;
-	}
+.u-image--left.u-spacing--base > .o-media__image {
+	margin-right: $base-spacing;
+}
 
-	.u-image--left.u-spacing--base > .o-media__image {
-		margin-right: $base-spacing;
-	}
+.u-image--left.u-spacing--half > .o-media__image {
+	margin-right: $base-spacing--half;
+}
 
-	.u-image--left.u-spacing--half > .o-media__image {
-		margin-right: $base-spacing--half;
-	}
+.u-image--left.u-spacing--quarter > .o-media__image {
+	margin-right: $base-spacing--quarter;
+}
 
-	.u-image--left.u-spacing--quarter > .o-media__image {
-		margin-right: $base-spacing--quarter;
-	}
+.u-image--left.u-spacing--double > .o-media__image {
+	margin-right: $base-spacing--double;
+}
 
-	.u-image--left.u-spacing--double > .o-media__image {
-		margin-right: $base-spacing--double;
-	}
+.u-image--left.u-spacing--quadruple > .o-media__image {
+	margin-right: $base-spacing--quadruple;
+}
 
-	.u-image--left.u-spacing--quadruple > .o-media__image {
-		margin-right: $base-spacing--quadruple;
-	}
+.u-image--right.u-spacing--base > .o-media__image {
+	margin-left: $base-spacing;
+}
 
-	.u-image--right.u-spacing--base > .o-media__image {
-		margin-left: $base-spacing;
-	}
+.u-image--right.u-spacing--half > .o-media__image {
+	margin-left: $base-spacing--half;
+}
 
-	.u-image--right.u-spacing--half > .o-media__image {
-		margin-left: $base-spacing--half;
-	}
+.u-image--right.u-spacing--quarter > .o-media__image {
+	margin-left: $base-spacing--quarter;
+}
 
-	.u-image--right.u-spacing--quarter > .o-media__image {
-		margin-left: $base-spacing--quarter;
-	}
+.u-image--right.u-spacing--double > .o-media__image {
+	margin-left: $base-spacing--double;
+}
 
-	.u-image--right.u-spacing--double > .o-media__image {
-		margin-left: $base-spacing--double;
-	}
-
-	.u-image--right.u-spacing--quadruple > .o-media__image {
-		margin-left: $base-spacing--quadruple;
-	}
-
+.u-image--right.u-spacing--quadruple > .o-media__image {
+	margin-left: $base-spacing--quadruple;
+}
+```
 ### Markup
-
-	<div class="o-media [ u-clearfix ] [ u-image--left u-image--right ] [ u-spacing--base u-spacing--half u-spacing--quarter u-spacing--double u-spacing--quadruple ]">
-		<div class="o-media__image"></div>
-		<div class="o-media__body"></div>
-	</div>
+```html
+<div class="o-media [ u-clearfix ] [ u-image--left u-image--right ] [ u-spacing--base u-spacing--half u-spacing--quarter u-spacing--double u-spacing--quadruple ]">
+	<div class="o-media__image"></div>
+	<div class="o-media__body"></div>
+</div>
+```
 
 ## objects.block
 
